@@ -4,7 +4,7 @@ require 'lang'
 langfile = "testlang.lang"
 api.lang.load(langfile)
 gameName=api.lang.get("game.title")
-version=38
+version=39
 OFFSCR=0.99
 ru=false --///RUS LANG///
 cheat=false --/// Q- fast break /// G- invert gravity ///
@@ -299,10 +299,10 @@ function love.draw()
                 love.graphics.setColor(math.abs(z)/10+0.6,math.abs(z)/10+0.6,math.abs(z)/10+0.6) --3D
                 love.graphics.setColor(math.abs(z)/10,math.abs(z)/10,math.abs(z)/10,0.5) --FOG
                 love.graphics.draw(world.tile.textures[texture_id],(i-1)*world.tile.h-z,(j-1)*world.tile.w-z)
-            else
             	love.graphics.draw(world.tile.textures[texture_id],(i-1)*world.tile.h,(j-1)*world.tile.w)
             end
           end
+		  end
         end
       end
     end
