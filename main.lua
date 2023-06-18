@@ -235,7 +235,7 @@ function love.update(dt)
       else
         player.brk=0
       end
-      if(m2)then
+      if (m2) then
         if(world.chunk.data[t1d2d(mxb,myb,world.w)]==0)then
           if(player.inventory[inv.selected].q>0)then
             local type=world.tile.ItemData[player.inventory[inv.selected].id].type or ""
